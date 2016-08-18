@@ -1,0 +1,33 @@
+html, body { 
+  background: url(../assets/images/fundo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../assets/fonts/Aura-Regular.otf);
+}
+
+a:link, a:visited, a:hover, a:active{
+    font-family: myFirstFont;
+    font-size: 60px;
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+
+.inner-container {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
