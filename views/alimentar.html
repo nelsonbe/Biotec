@@ -1,5 +1,19 @@
-ALIMENTAR
 
-<br><br>
+<div ng-controller="CarouselDemoCtrl">
+	<div>
+		<carousel interval="myInterval">
+			<slide ng-repeat="slide in slides" active="slide.active">
+				<img ng-src="{{slide.image}}">
+				
+					<div class="carousel-caption">
+						<h4 class="texto">{{slide.texto}}</h4>
+					</div>
+				</div>	
+			</slide>
+		</carousel>
 
-<li><a href="#/explore"> Back</a></li>
+	</div>
+</div>  
+<div class="footer">
+	<a href="#/explore"><img src="../assets/images/menu.png"</img></a></li>
+</div>
